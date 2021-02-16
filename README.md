@@ -1,20 +1,35 @@
-##Clone do repositorio
-git clone
+# Projeto Maxmilhas
+Projeto de blacklist cpf com docker, nodejs, postgres
 
-##Baixar as dependencias e node_modules
+## Clone do repositorio
+```bash
+git clone https://github.com/IcaroLettieri/maxmilhas.git
+```
+
+## Baixar as dependencias e node_modules
+```bash
 yarn install
+```
 
-##Criação do docker ambiente nodejs
+## Criação do docker ambiente nodejs
+```bash
 docker build -t maxmilhas_dockernode .
+```
 
-##Utilizando docker-compose para monitorar as alterações em ambiente de dev
+## Utilizando docker-compose para monitorar as alterações em ambiente de dev
+```bash
 docker-compose up
+```
 
-##Execução das migrations
+## Execução das migrations
+```bash
 yarn typeorm migration:run
+```
 
-##Caso o docker não execute o ambiente node
+## Caso o docker não execute o ambiente node
+```bash
 yarn dev:server
+```
 
 Foi utilizado dependecia:
  - "cpf-cnpj-validator" para validação do cpf
