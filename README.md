@@ -44,3 +44,11 @@ Projeto foi estruturado em arquitetura SOLID
  - models: com as entidades do banco
  - routes: com as rotas da aplicação
  - services: com todos os servicos de execução da aplicação
+
+Rotas da api
+```bash
+GET     http://localhost:3000/status - Retorno do status
+GET     http://localhost:3000/blacklists/:cpf - Consulta cpf na blacklist com retorno FREE | BLOCK
+POST    http://localhost:3000/blacklists/{ cpf } - Cadastra cpf na blacklist
+DELETE  http://localhost:3000/blacklists/:cpf - Remove cpf da blacklist
+```
